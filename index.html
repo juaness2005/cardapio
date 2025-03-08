@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Pizzas | Cadastro de Cliente</title>
+    <link rel="stylesheet" href="css/cadastro.css"> 
+
+    <link rel="icon" href="assets/favicon.ico">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <img src="assets/logo.jpg" alt="Logo da Empresa"> 
+    </header>
+
+    <h2>Cadastro de Cliente</h2>
+
+    <form action="cadastrar_cliente.php" method="POST">
+        <div class="form-group">
+            <label for="nome" class="label-maior">Nome do Cliente <span class="asterisco">*</span>:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="telefone" class="label-menor">Telefone <span class="asterisco">*</span>:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+        </div>
+
+
+        <div class="form-group endereco">
+            <div class="endereco-item">
+                <label for="logradouro" class="label-menor">Logradouro <span class="asterisco">*</span>:</label>
+                <input type="text" id="logradouro" name="logradouro" placeholder="Rua, Avenida..." required>
+            </div>
+            <div class="endereco-item">
+                <label for="numero" class="label-menor">Número da Casa <span class="asterisco">*</span>:</label>
+                <input type="text" id="numero" name="numero" placeholder="Número" required>
+            </div>
+            <div class="endereco-item">
+                <label for="complemento" class="label-menor">Complemento:</label>
+                <input type="text" id="complemento" name="complemento" placeholder="Apartamento, Bloco, etc.">
+            </div>
+        </div>
+    
+        <div class="form-group">
+            <label for="bairro" class="label-menor">Bairro <span class="asterisco">*</span>:</label>
+            <input type="text" id="bairro" name="bairro" placeholder="Bairro" required>
+        </div>
+
+        <div class="form-group">
+            <label for="cidade" class="label-menor">Cidade <span class="asterisco">*</span>:</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Cidade" required>
+        </div>
+
+        <div class="form-group">
+            <label for="estado" class="label-menor">Estado <span class="asterisco">*</span>:</label>
+            <input type="text" id="estado" name="estado" placeholder="Estado" required>
+        </div>
+
+        <div class="form-group">
+            <label for="cep" class="label-menor">CEP <span class="asterisco">*</span>:</label>
+            <input type="text" id="cep" name="cep" placeholder="CEP" required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="referencia" class="label-menor">Ponto de Referência:</label>
+            <input type="text" id="referencia" name="referencia" placeholder="Exemplo: Próximo ao mercado">
+        </div>
+
+        <div class="form-group">
+            <a href="cardapio.html">
+                <button type="button">Cadastrar</button>
+            </a>
+        </div>
+
+    </form>
+</div>
+
+
+</body>
+</html>

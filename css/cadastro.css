@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8e1b8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    background-color: transparent;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 250px;
+}
+
+h2 {
+    color: #e74c3c;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.label-maior {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.label-menor {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.asterisco {
+    color: red;
+}
+
+input[type="text"], input[type="tel"], input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: transparent;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.endereco {
+    display: flex;
+    justify-content: space-between;
+}
+
+.endereco-item {
+    width: 30%;
+}
+
+
+.form-group button {
+    background-color: #e74c3c;
+    color: white;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    width: 700px;
+    border-radius: 8px;
+}
+
+.form-group button:hover{
+    background-color: #cf1500;
+}

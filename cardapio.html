@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Pizzas | Cardápio</title>
+    <link rel="stylesheet" href="css/cardapio.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="icon" href="assets/favicon.ico">
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="assets/logo.jpg" alt="Logo da Empresa"> 
+        </a>
+    </header>
+
+    <button class="carrinho" onclick="mostrarCarrinho()">
+        <i class="bi bi-cart"></i>
+    </button>
+    
+    <div id="carrinhoModal" class="modal">
+        <button class="fechar" onclick="fecharCarrinho()">&times;</button>
+        <h2>Itens Escolhidos</h2>
+        <ul id="itensEscolhidos"></ul>
+        <div id="pagamentoDetalhes"></div>
+        <div class="payment-options">
+            <button onclick="selecionarPagamento('credito')">Crédito</button>
+            <button onclick="selecionarPagamento('pix')">Pix</button>
+            <button onclick="selecionarPagamento('dinheiro')">Dinheiro</button>
+        </div>
+    </div>
+    
+    
+
+    <section class="cardapio" id="cardapio">
+        <h2>Cardápio</h2>
+
+            <div class="itens-cardapio">
+                <div class="frango">
+                    <img src="assets/frango-removebg-preview.png" alt="frango">
+                    <div class="info">
+                        <h3>Frango</h3>
+                        <h4>6 fatias <span>R$35,00</span></h4>
+                        <h4>8 fatias <span>R$45,00</span></h4>
+                        <h4>12 fatias <span>R$55,00</span></h4>
+                        <button class="pedir">pedir agora</button>
+                    </div>   
+                </div>
+                <div class="calabresa">
+                    <img src="assets/calabresa-removebg-preview.png" alt="calabresa">
+                    <div class="info">
+                        <h3>Calabresa</h3>
+                        <h4>6 fatias <span>R$35,00</span></h4>
+                        <h4>8 fatias <span>R$45,00</span></h4>
+                        <h4>12 fatias <span>R$55,00</span></h4>
+                        <button class="pedir">pedir agora</button>
+                    </div> 
+                
+                </div>
+                <div class="portuguesa">
+                    <img src="assets/portuguesa-removebg-preview.png" alt="portuguesa">
+                    <div class="info">
+                        <h3>Portuguesa</h3>
+                        <h4>6 fatias <span>R$35,00</span></h4>
+                        <h4>8 fatias <span>R$45,00</span></h4>
+                        <h4>12 fatias <span>R$55,00</span></h4>
+                        <button class="pedir">pedir agora</button>
+                    </div> 
+                
+                </div>
+                <div class="strogonoff">
+                    <img src="assets/strogonoff-removebg-preview.png" alt="strogonoff">
+                    <div class="info">
+                        <h3>Strogonoff</h3>
+                        <h4>6 fatias <span>R$35,00</span></h4>
+                        <h4>8 fatias <span>R$45,00</span></h4>
+                        <h4>12 fatias <span>R$55,00</span></h4>
+                        <button class="pedir">pedir agora</button>
+                    </div> 
+                
+                </div>
+                <div class="ChocolatePreto">
+                    <img src="assets/chocolate-removebg-preview.png" alt="strogonoff">
+                    <div class="info">
+                        <h3>Chocolate Preto</h3>
+                        <h4>6 fatias <span>R$35,00</span></h4>
+                        <h4>8 fatias <span>R$45,00</span></h4>
+                        <h4>12 fatias <span>R$55,00</span></h4>
+                        <button class="pedir">pedir agora</button>
+                    </div> 
+                
+                </div>
+                <div class="sensacao">
+                    <img src="assets/sensacao-removebg-preview.png"strogonoff">
+                    <div class="info">
+                        <h3>Sensação</h3>
+                        <h4>6 fatias <span>R$35,00</span></h4>
+                        <h4>8 fatias <span>R$45,00</span></h4>
+                        <h4>12 fatias <span>R$55,00</span></h4>
+                        <button class="pedir">pedir agora</button>
+                    </div> 
+                
+                </div>
+                <div class="confete">
+                    <img src="assets/confete-removebg-preview.png" alt="strogonoff">
+                    <div class="info">
+                        <h3>Confete</h3>
+                        <h4>6 fatias <span>R$35,00</span></h4>
+                        <h4>8 fatias <span>R$45,00</span></h4>
+                        <h4>12 fatias <span>R$55,00</span></h4>
+                        <button class="pedir">pedir agora</button>
+                    </div> 
+                
+                </div>
+                <div class="prestigio">
+                    <img src="assets/prestigio-removebg-preview.png" alt="strogonoff">
+                    <div class="info">
+                        <h3>Prestigio</h3>
+                        <h4>6 fatias <span>R$35,00</span></h4>
+                        <h4>8 fatias <span>R$45,00</span></h4>
+                        <h4>12 fatias <span>R$55,00</span></h4>
+                        <button class="pedir">pedir agora</button>
+                    </div> 
+                
+                </div>
+                
+            </div>
+
+    </section>
+
+    <script src="js/cardapio.js"></script>
